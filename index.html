@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  </head>
+  <body>
+     <!-- Write your markup here  -->
+      <div class="container" id="contain">
+        <div class="row row-space">
+          <div class="col-sm-4">
+            <h3 id="weight-header">Your Weight</h3>
+          </div>
+          <div class="col-sm-4">
+            <h3 id="select-header">Select a Planet</h3>
+          </div>
+        </div>
+        <div class="row row-space">
+          <div class="col-4">
+            <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+          </div>
+          <div class="col-4">
+            <select name="Planets" id="planets"></select>
+          </div>
+          <div class="col-4">
+            <button id="calculate-button" onclick="handleClickEvent()">Calculate</button>
+          </div>
+        </div>
+        <div class="row row-space">
+          <div class="col-12">
+            <p class="alert alert-primary" id="output"></p>
+          </div>
+        </div>
+      </div>
+
+    <script src="main.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
